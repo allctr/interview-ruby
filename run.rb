@@ -2,9 +2,12 @@
 require 'optparse'
 require 'json'
 require 'csv'
+require 'fileutils'
+require 'memory_profiler'
 
 # Require files from the app folder
 Dir["./app/**/*.rb"].each { |file| require file }
+require './test/test.rb'
 
 options = {}
 OptionParser.new do |opts|
@@ -22,6 +25,10 @@ OptionParser.new do |opts|
     options[:run_script] = true
   end
 
+  opts.on("-t", "--test", "Run test cases") do
+    options[:run_tests] = true
+  end
+
   opts.on("-h", "--help", "Display this help") do
     puts opts
     exit
@@ -36,8 +43,9 @@ if options[:version]
 elsif options[:run_sample]
   puts "It works"
 elsif options[:run_script]
-  app = App.new
-  app.run_script
+  App.new("files/pages").run_script
+elsif options[:run_tests]
+  Test.run("test/cases")
 else
   puts "No Action Requested."
 end

@@ -13,4 +13,4 @@ gem 'rspec'
 
 # To handle environment variables
 gem 'dotenv'
-
+gem 'memory_profiler'

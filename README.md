@@ -10,7 +10,7 @@ Install bundler with `gem install bundler -v 2.4.19`
 
 Run `bundle install` to run Bundler
 
-Ruby `ruby run.rb --sample` to run the basic case. It should output 'it works' on console.
+Run `ruby run.rb --sample` to run the basic case. It should output 'it works' on console.
 
 
 ## Introduction
@@ -38,7 +38,9 @@ There are some attributes that we'd ignore for the purposes of this excersize.
 
 ## Task
 
-The purpose is to extract the contents of all the `TABLE`s of all the pages and print them out as given in 'solution.png'
+The purpose is to extract the contents of all the `TABLE`s of all the pages and print them out as given in 'solution.png'. App takes parameters to either print the output on console or print it out in a file. See app.rb for details.
+
+Note that blocks are in random order. The tables need to be printed in the order that they appear in the PDF, in order of the pages they appear in
 
 ## What we look for
 
@@ -51,4 +53,9 @@ We would like to know how long did it take you to finish the problem from readin
 Best of luck.
 
 
+## Tests
+
+The files folder contains a basic version to understand the problem. test/ folder contains two test cases which are more intensive. We can run these test cases and do benchmarking on them to measure accuracy and performance.
+
+Run `ruby run.rb --tests` to run the given test cases
 
