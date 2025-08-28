@@ -8,6 +8,7 @@ class InvestorSummary
   # Output, display on console the output arranged as given in investor_summary.png displaying
   # total investor level cashflows, then broken down by bank
   def run(type = :sample)
+    # Your code here
   end
 
   # Optional:
