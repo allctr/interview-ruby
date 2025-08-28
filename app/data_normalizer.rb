@@ -73,7 +73,7 @@ class DataNormalization
       { full_name: "  JANE  DOE  ", email: "  jane.doe@EXAMPLE.com  ", tags: "vip, investor,  " },
       { full_name: "Dr. Maria Elena De La Cruz", email: "MARIA @domain.COM ", tags: " LATAM, vip " },
       { full_name: "  ", email: "unknown@example.com", tags: "ghost" },
-      { full_name: "Jane Doe", email: "jane.duplicate@example.com", tags: "test" }
+      { full_name: "Jane Doe", email: "jane.duplicate@example.com", tags: "test" },
       { full_name: "Bob a. joHnSoN", email: "BobAjOhNSon@mAIl . cOM", tags: "" },
       { full_name: "oLgA eleNA NGuYEN", email: nil, tags: "Partner, Test, VIP, Admin" },
       { full_name: "AMiR lA garCIa", email: "AMiRlAGARcia@DoMaIn.NET", tags: "Guest" },
@@ -83,7 +83,7 @@ class DataNormalization
       { full_name: "ALICE b. johnsON", email: " aLicebjOHNsOn@teST.ORg ", tags: " prospect " },
       { full_name: "AKira Elena JOhNSon", email: " aKiraelENajOHnsON@TEsT.ORg ", tags: " Latam, UK " },
       { full_name: "  olgA o'neiL DoE   ", email: "olgaOnEILdOE@doMain.neT", tags: "Investor, VIP, prospect" },
-      { full_name: "ZArA vAn PatEL", email: nil, tags: "Latam" }
+      { full_name: "ZArA vAn PatEL", email: nil, tags: "Latam" },
     ]
   end
 end

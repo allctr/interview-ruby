@@ -1,10 +1,8 @@
-# run.rb
-require 'optparse'
+
+ROOT = __dir__
+
 require 'json'
 require 'csv'
 require 'fileutils'
-require 'memory_profiler'
-
-
-puts "Stub"
-
+require "#{ROOT}/app/data_normalizer"
+require "#{ROOT}/app/investor_summary"
